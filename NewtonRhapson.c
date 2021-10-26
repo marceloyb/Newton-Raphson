@@ -28,6 +28,7 @@ void main(){
     scanf(" %Lf", &input);
     xk1 = ieee754(input);
     //xk1 = input/4 + 1;
+    
     do {
         printf("***********************iteracao = %d\n", i++);
         xk = xk1;
