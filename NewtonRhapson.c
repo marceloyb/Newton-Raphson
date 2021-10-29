@@ -3,7 +3,7 @@
 #include <math.h>
 #include <string.h>
 
-long double ieee754(float input){
+long double ieee754(float input) {
     int expoente;
     long double mantissa;
 
@@ -19,7 +19,7 @@ long double ieee754(float input){
     return mantissa;
 }
 
-void main(){
+void main() {
     long double xk, fxk, Dfxk, xk1, erro, precisao;
     long double input;
     int i = 0;
