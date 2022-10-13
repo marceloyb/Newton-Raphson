@@ -8,9 +8,9 @@ long double ieee754(float input) {
     long double mantissa;
 
     expoente = floor(log2(input));
-    printf("%d\n", expoente);
+    printf("Valor do expoente: %d\n", expoente);
     mantissa = input/pow(2, expoente);
-    printf("%.20Lf\n", mantissa);
+    printf("Valor da mantissa: %.20Lf\n", mantissa);
     expoente += 1023; // bias 64bits
 
     if (fmod(input, 2) != 0)
